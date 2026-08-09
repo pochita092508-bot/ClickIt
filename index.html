@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         BIRTHDAY MUSIC
+    =============================== -->
+
+    <audio
+        id="birthdayMusic"
+        preload="auto"
+        loop
+    >
+        <source
+            src="music/birthday.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <!-- ==============================
+         ENVELOPE SCREEN
+    =============================== -->
+
+    <section
+        id="envelopeScreen"
+        class="screen envelope-screen"
+    >
+
+        <div class="intro">
+
+            <p class="intro-small">
+                I have a little surprise for you...
+            </p>
+
+            <div class="intro-icon">
+                💌
+            </div>
+
+            <p class="intro-hint">
+                Click the envelope to open
+            </p>
+
+        </div>
+
+
+        <!-- ENVELOPE -->
+
+        <div
+            id="envelope"
+            class="envelope"
+            role="button"
+            tabindex="0"
+            aria-label="Open birthday envelope"
+        >
+
+            <div class="envelope-back"></div>
+
+
+            <!-- Letter -->
+
+            <div class="letter">
+
+                <div class="letter-cake">
+                    🎂
+                </div>
+
+                <div class="letter-text">
+                    Happy<br>
+                    Birthday!
+                </div>
+
+            </div>
+
+
+            <!-- Front of envelope -->
+
+            <div class="envelope-front">
+
+                <div class="left-fold"></div>
+
+                <div class="right-fold"></div>
+
+            </div>
+
+
+            <!-- Flap -->
+
+            <div class="envelope-flap"></div>
+
+
+            <!-- Seal -->
+
+            <div class="seal">
+                ♥
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         BIRTHDAY SCREEN
+    =============================== -->
+
+    <section
+        id="birthdayScreen"
+        class="screen birthday-screen"
+    >
+
+        <!-- Floating decorations -->
+
+        <div class="decorations">
+
+            <span class="decor d1">✦</span>
+            <span class="decor d2">♥</span>
+            <span class="decor d3">✦</span>
+            <span class="decor d4">♥</span>
+            <span class="decor d5">✦</span>
+            <span class="decor d6">♥</span>
+
+        </div>
+
+
+        <div class="birthday-content">
+
+            <p class="subtitle">
+                Today is your special day ✨
+            </p>
+
+            <h1>
+                Happy Birthday!
+            </h1>
+
+
+            <!-- ==========================
+                 CAKE
+            =========================== -->
+
+            <div class="cake-area">
+
+                <div
+                    id="cake"
+                    class="cake"
+                >
+
+                    <!-- Plate -->
+
+                    <div class="plate"></div>
+
+
+                    <!-- Bottom layer -->
+
+                    <div
+                        class="cake-layer layer-bottom"
+                    >
+
+                        <div class="cake-top"></div>
+
+                        <div class="cream"></div>
+
+                    </div>
+
+
+                    <!-- Middle layer -->
+
+                    <div
+                        class="cake-layer layer-middle"
+                    >
+
+                        <div class="cake-top"></div>
+
+                        <div class="cream"></div>
+
+                    </div>
+
+
+                    <!-- Top layer -->
+
+                    <div
+                        class="cake-layer layer-top"
+                    >
+
+                        <div class="cake-top"></div>
+
+                        <div class="cream"></div>
+
+                    </div>
+
+
+                    <!-- Frosting -->
+
+                    <div class="frosting">
+
+                        <span class="drip drip1"></span>
+                        <span class="drip drip2"></span>
+                        <span class="drip drip3"></span>
+                        <span class="drip drip4"></span>
+                        <span class="drip drip5"></span>
+
+                    </div>
+
+
+                    <!-- Candle -->
+
+                    <div
+                        class="candle"
+                        title="Click the candle"
+                    >
+                        <div class="candle-stripe"></div>
+                    </div>
+
+
+                    <!-- Flame -->
+
+                    <div
+                        class="flame"
+                        title="Click the flame"
+                    >
+                        <div class="flame-inner"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p
+                id="candleHint"
+                class="candle-hint"
+            >
+                Make a wish... then click the candle 🕯️
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         FINAL MESSAGE
+    =============================== -->
+
+    <div
+        id="messageOverlay"
+        class="message-overlay"
+    >
+
+        <div class="message-card">
+
+            <button
+                id="closeMessage"
+                class="close-button"
+                aria-label="Close message"
+            >
+                ×
+            </button>
+
+
+            <div class="message-heart">
+                💖
+            </div>
+
+
+            <h2>
+                A Special Message
+            </h2>
+
+
+            <p>
+                Happy Birthday! 🎂
+            </p>
+
+
+            <p>
+                I hope your special day is
+                filled with happiness,
+                laughter, love, and
+                unforgettable memories.
+            </p>
+
+
+            <p>
+                May all the things you wish
+                for come true, and may this
+                next chapter of your life be
+                even more beautiful.
+            </p>
+
+
+            <p class="final-message">
+                You deserve the happiest
+                birthday ever! 🎉💗
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
